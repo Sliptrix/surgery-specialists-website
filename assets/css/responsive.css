@@ -1,0 +1,284 @@
+/* Surgery Specialists of St. Louis - Responsive Design */
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    /* Mobile Menu */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #2c5aa0 0%, #1e3d6c 100%);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-cta .btn-primary,
+    .hero-cta .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        margin-bottom: 2rem;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-image {
+        height: 250px;
+        font-size: 4rem;
+    }
+
+    /* Stats */
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat {
+        padding: 1rem;
+    }
+
+    /* Reviews */
+    .reviews-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .google-reviews,
+    .testimonials-section {
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+
+    /* Typography */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    /* Scheduling */
+    .acuity-placeholder {
+        padding: 2rem;
+    }
+    
+    .acuity-placeholder h3 {
+        font-size: 1.3rem;
+    }
+    
+    .acuity-placeholder p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Responsive Styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-content {
+        gap: 2rem;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .reviews-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .hero p {
+        font-size: 1.4rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header {
+        position: static;
+        background: white !important;
+        color: black !important;
+        box-shadow: none;
+    }
+    
+    .hero {
+        background: white !important;
+        color: black !important;
+        padding: 2rem 0;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .schedule-btn {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Accessibility and Animation Preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .fade-in {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .hero {
+        background: #000 !important;
+        color: #fff !important;
+    }
+    
+    .service-card {
+        border: 2px solid #000;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        border: 2px solid #000;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .services {
+        background: #2a2a2a;
+    }
+    
+    .service-card {
+        background: #333;
+        color: #e0e0e0;
+    }
+    
+    .about {
+        background: #2a2a2a;
+    }
+    
+    .reviews {
+        background: #2a2a2a;
+    }
+    
+    .google-reviews,
+    .testimonials-section {
+        background: #333;
+        border-color: #555;
+    }
+    
+    .review-card {
+        background: #404040;
+        color: #e0e0e0;
+    }
+    
+    .section-subtitle {
+        color: #ccc;
+    }
+}

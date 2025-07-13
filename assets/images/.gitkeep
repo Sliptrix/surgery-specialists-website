@@ -1,0 +1,18 @@
+# Images Directory
+
+This directory will contain all image assets for the website:
+
+- logo.png - Practice logo
+- favicon.ico - Website favicon
+- hero-background.jpg - Hero section background
+- doctor-photo.jpg - Dr. Dysarz professional photo
+- service-icons/ - Custom service icons
+- testimonial-photos/ - Patient testimonial photos (with permission)
+
+## Image Optimization Guidelines
+
+- Use WebP format when possible for better compression
+- Optimize images for web (compress without losing quality)
+- Use appropriate sizes for different screen densities
+- Include alt text for accessibility
+- Use lazy loading for images below the fold
