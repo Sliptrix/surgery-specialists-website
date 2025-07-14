@@ -122,6 +122,38 @@
     .acuity-placeholder p {
         font-size: 1rem;
     }
+    
+    /* Announcement Banner Mobile */
+    .banner-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .banner-controls {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    .banner-indicators {
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .banner-nav {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+    .announcement-item {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    
+    .banner-text {
+        min-height: 60px;
+    }
 }
 
 /* Tablet Responsive Styles */
